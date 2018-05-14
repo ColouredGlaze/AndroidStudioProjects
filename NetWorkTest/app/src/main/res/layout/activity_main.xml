@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lin.mt.networktest.MainActivity"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_request_http_url_connection"
+                android:textAllCaps="false"
+                android:text="Send Request By HttpURLConnection"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_request_ok_http"
+                android:textAllCaps="false"
+                android:text="Send Request By OkHttp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/parse_xml_with_pull"
+                android:textAllCaps="false"
+                android:text="Parse XML with pull"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/parse_xml_with_sax"
+                android:textAllCaps="false"
+                android:text="Parse XML with sax"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/parse_json_with_jsonObject"
+                android:textAllCaps="false"
+                android:text="Parse Json with JSONObject"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/parse_json_with_gson"
+                android:textAllCaps="false"
+                android:text="Parse Json with GSON"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/response_text"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
